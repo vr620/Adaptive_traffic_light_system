@@ -22,9 +22,7 @@ If the traffic light timers are showing correct time to regulate the traffic, th
 
 3. **OPENCV**
 
-4. **CVLIB**
-
-5.**YOLO**
+4. **YOLO**
 
 # DATA
 
@@ -34,28 +32,15 @@ If the traffic light timers are showing correct time to regulate the traffic, th
 
 # ROADMAP OF COUNTING.
 
-1.**OpenCv approach**
-Placing a Camera on each side of the intersection and Processing the images to get the number of vehicles on each side of the intersection .(BACKGROUND SUBTRACTOR)
-
-The Image taken is processed :
-1. Read using OpenCv Library in Python
-2. resized according to need
-3. Converted to Black and White 
-4. Removing Gaussian Noise
-5. Removing Salt and Pepper Noise 
-6. Dilation
-7. Take Difference from reference image 
-8. Find the percentage change 
-9. Get Number of Cars
-
-
-2.**cvlib approach**
+**openCV approach**
 Placing a Camera on each side of the intersection and Processing the images to get the number of vehicles on each side of the intersection.
 
 1. Read using OpenCv Library in Python.
 2. resized according to need.
-3. use cvlib to detect images(yolo weights).
+3. use opencv dnn module to detect images(use trained weights and config file).
 4. get the count of vehicles using label list.
+
+[link of process](https://github.com/vr620/Adaptive_traffic_light_system/blob/master/final_complete_code.ipynb)
 
 <img src="https://github.com/vaibhavsethia/Smart-Traffic-Light/blob/master/IMG/imagenew.jpg"
      alt="https://github.com/vaibhavsethia/Smart-Traffic-Light/blob/master/IMG/imagenew.jpg"
